@@ -34,6 +34,7 @@ Besides the demo.sh, you can also compile the code yourself :
 (distance.c is used to test the result)
 
 g++ ./train.cpp -fopenmp [-parameters]
+
 gcc ./distance.c -o distance -lm
 
 some user defined parameters are listed here. If they are not specified, the default value will be used.
