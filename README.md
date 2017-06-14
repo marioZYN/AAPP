@@ -71,13 +71,13 @@ The project implementation is based on the original C code by Google. A lot of c
 
 In the training phase, sigma function is used to compute the predicted label. Since it needs to be computed in each iteration, a pre-computed table is used as a dictionary to speedup the process. 
 
-/*
+`
 expTable = (real *) malloc((EXP_TABLE_SIZE + 1) * sizeof(real));
   for (int i = 0; i < EXP_TABLE_SIZE + 1; i++) {
         expTable[i] = exp((i / (real) EXP_TABLE_SIZE * 2 - 1) * MAX_EXP); // Precompute the exp() table
         expTable[i] = expTable[i] / (expTable[i] + 1);                    // Precompute f(x) = x / (x + 1)
     }
-*/
+`
 
 
 * </s>
